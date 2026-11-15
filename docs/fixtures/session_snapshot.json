@@ -1,0 +1,121 @@
+{
+  "sessionId": "ses_01",
+  "name": "강릉 여행",
+  "state": "ACTIVE",
+  "isAccountSession": true,
+  "hostCarId": "car_A",
+  "destination": {
+    "placeId": "plc_05",
+    "name": "경포대",
+    "address": "강원 강릉시 경포로 365",
+    "lat": 37.7955,
+    "lng": 128.8966,
+    "distanceKm": 6.8
+  },
+  "joinCode": "482913",
+  "qr": {
+    "url": "http://localhost:5173/j/abc123",
+    "expiresAt": "2026-11-13T05:50:00Z"
+  },
+  "cars": [
+    {
+      "carId": "car_A",
+      "displayName": "A차",
+      "driverName": "드라이버A",
+      "role": "HOST",
+      "status": "CONNECTED",
+      "driveState": "PARKED",
+      "look": null
+    },
+    {
+      "carId": "car_B",
+      "displayName": "B차",
+      "driverName": "현우",
+      "role": "COHOST",
+      "status": "CONNECTED",
+      "driveState": "PARKED",
+      "look": null
+    }
+  ],
+  "participants": [
+    {
+      "participantId": "par_00",
+      "name": "드라이버A",
+      "role": "LEADER",
+      "carId": "car_A",
+      "isMember": true,
+      "online": true
+    },
+    {
+      "participantId": "par_01",
+      "name": "민지",
+      "role": "CREW",
+      "carId": "car_A",
+      "isMember": false,
+      "online": true
+    }
+  ],
+  "waypoints": [
+    {
+      "waypointId": "wpt_01",
+      "carId": "car_A",
+      "place": {
+        "placeId": "plc_01",
+        "name": "카페 오롯",
+        "address": "강원 강릉시 창해로 14",
+        "lat": 37.773,
+        "lng": 128.947,
+        "distanceKm": 1.2
+      },
+      "addedBy": {
+        "participantId": "par_01",
+        "name": "민지"
+      },
+      "createdAt": "2026-11-13T05:20:00Z"
+    }
+  ],
+  "proposals": [
+    {
+      "proposalId": "prp_01",
+      "place": {
+        "placeId": "plc_02",
+        "name": "강릉휴게소(강릉 방향)",
+        "address": "강원 강릉시 성산면 영동고속도로",
+        "lat": 37.726,
+        "lng": 128.789,
+        "distanceKm": 18.4
+      },
+      "fromCarId": "car_A",
+      "proposedBy": {
+        "participantId": "par_01",
+        "name": "민지"
+      },
+      "responses": [
+        {
+          "carId": "car_B",
+          "status": "PENDING"
+        }
+      ],
+      "expiresAt": "2026-11-13T05:21:00Z"
+    }
+  ],
+  "mutes": [
+    {
+      "byCarId": "car_A",
+      "targetCarId": "car_B"
+    }
+  ],
+  "music": {
+    "connected": true,
+    "locked": false,
+    "nowPlaying": {
+      "title": "밤편지",
+      "artist": "아이유",
+      "albumImageUrl": null,
+      "isPlaying": true
+    }
+  },
+  "createdAt": "2026-11-13T05:00:00Z",
+  "pausedAt": null,
+  "expiresAt": null
+}

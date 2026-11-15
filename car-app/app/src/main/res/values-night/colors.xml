@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KKIRI 색 토큰: 다크(야간). 프로토타입 v4의 dark 테마. -->
+<resources>
+    <color name="kk_bg">#1B1719</color>
+    <color name="kk_fg">#F2E4D0</color>
+    <color name="kk_fg_muted">#B8F2E4D0</color>
+    <color name="kk_card">#0FF2E4D0</color>
+    <color name="kk_line">#85777E</color>
+    <color name="kk_chip">#1AF2E4D0</color>
+    <color name="kk_brand">#A07FE6</color>
+    <color name="kk_brand_text">#C7B2F5</color>
+    <color name="kk_brand_tint">#33A07FE6</color>
+    <color name="kk_btn">#A07FE6</color>
+    <color name="kk_btn_ink">#1B1719</color>
+    <color name="kk_me">#F2E4D0</color>
+    <color name="kk_ground">#2A2326</color>
+    <color name="kk_rail">#241F22</color>
+    <color name="kk_me_ink">#1B1719</color>
+    <color name="kk_map_bg">#151214</color>
+    <color name="kk_online">#5BD48A</color>
+    <color name="kk_road">#2A2326</color>
+    <color name="kk_speaking">#5BD48A</color>
+</resources>

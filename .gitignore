@@ -1,0 +1,32 @@
+# env / secrets
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+local.properties
+
+# node
+node_modules/
+dist/
+*.log
+.vite/
+
+# android / gradle
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# ide / os
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# submission APK
+!apk/OKKIKKI_KKIRI_release.apk

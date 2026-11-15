@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KKIRI 크기 토큰. 화면 코드는 숫자를 직접 적지 않고 이 이름만 쓴다. -->
+<resources>
+    <!-- 글자 크기 (PR-14: 최소 12sp, 여기서는 16sp부터) -->
+    <dimen name="kk_text_display">56sp</dimen>
+    <dimen name="kk_text_xl">40sp</dimen>
+    <dimen name="kk_text_l">32sp</dimen>
+    <dimen name="kk_text_m">24sp</dimen>
+    <dimen name="kk_text_s">20sp</dimen>
+    <dimen name="kk_text_xs">16sp</dimen>
+
+    <!-- 여백 -->
+    <dimen name="kk_pad_screen">32dp</dimen>
+    <dimen name="kk_pad_modal">24dp</dimen>
+    <dimen name="kk_pad_card">24dp</dimen>
+    <dimen name="kk_pad_text">8dp</dimen>
+    <dimen name="kk_gap">16dp</dimen>
+    <dimen name="kk_gap_small">8dp</dimen>
+    <dimen name="kk_btn_pad_h">32dp</dimen>
+
+    <!-- 모서리 -->
+    <dimen name="kk_radius_card">24dp</dimen>
+    <dimen name="kk_radius_field">16dp</dimen>
+    <!-- 알약형: 높이의 절반 이상이면 양 끝이 반원이 된다 -->
+    <dimen name="kk_radius_pill">48dp</dimen>
+    <dimen name="kk_stroke">1dp</dimen>
+
+    <!-- 터치 요소 (PD-07: 큰 터치 영역) -->
+    <dimen name="kk_btn_height">72dp</dimen>
+    <dimen name="kk_btn_small_height">56dp</dimen>
+    <dimen name="kk_field_min_width">360dp</dimen>
+
+    <!-- 공간 그림(일행 차가 모인 바닥) 높이 -->
+    <dimen name="kk_space_height">200dp</dimen>
+
+    <!-- 로고(가로 126 : 세로 56) -->
+    <dimen name="kk_logo_width">81dp</dimen>
+    <dimen name="kk_logo_height">36dp</dimen>
+
+    <!-- V2-S5: Figma 확정본 글자 스타일(px=dp=sp 1:1). 행간은 *_lh. 옛 kk_text_*는 화면을 옮기며 지운다 -->
+    <dimen name="kk_t_title_l">44sp</dimen>
+    <dimen name="kk_t_title_s">38sp</dimen>
+    <dimen name="kk_t_body">34sp</dimen>
+    <dimen name="kk_t_caption">32sp</dimen>
+    <dimen name="kk_t_small">28sp</dimen>
+    <dimen name="kk_t_code">76sp</dimen>
+    <dimen name="kk_t_title_l_lh">56sp</dimen>
+    <dimen name="kk_t_title_s_lh">50sp</dimen>
+    <dimen name="kk_t_body_lh">46sp</dimen>
+    <dimen name="kk_t_caption_lh">44sp</dimen>
+    <dimen name="kk_t_small_lh">38sp</dimen>
+    <dimen name="kk_t_code_lh">96sp</dimen>
+
+    <!-- V2-S5: 확정본 모서리·크기 -->
+    <dimen name="kk_r_card">32dp</dimen>
+    <dimen name="kk_r_btn">32dp</dimen>
+    <dimen name="kk_r_key">24dp</dimen>
+    <dimen name="kk_r_chip">12dp</dimen>
+    <dimen name="kk_r_tab">28dp</dimen>
+    <dimen name="kk_h_btn">104dp</dimen>
+    <dimen name="kk_h_key">96dp</dimen>
+    <dimen name="kk_margin">24dp</dimen>
+    <dimen name="kk_space_l">24dp</dimen>
+    <dimen name="kk_space_s">16dp</dimen>
+    <dimen name="kk_rail_width">120dp</dimen>
+    <!-- V2-S7: CAR-02 세션 대기 · 일행 출발 후 -->
+    <dimen name="kk_qr_size">390dp</dimen>
+    <dimen name="kk_toy_list">104dp</dimen>
+    <dimen name="kk_toy_wait">150dp</dimen>
+    <dimen name="kk_row_h">96dp</dimen>
+    <dimen name="kk_touch">96dp</dimen>
+    <dimen name="kk_fab">104dp</dimen>
+    <dimen name="kk_gap_row">20dp</dimen>
+    <dimen name="kk_wait_card_l">560dp</dimen>
+    <dimen name="kk_pad_session_v">24dp</dimen>
+    <!-- V2-S7: CAR-03 합류(Figma 확정본) -->
+    <dimen name="kk_code_h_p">104dp</dimen>
+    <dimen name="kk_code_h_l">128dp</dimen>
+    <dimen name="kk_key_h_p">96dp</dimen>
+    <dimen name="kk_key_h_l">104dp</dimen>
+    <dimen name="kk_gap_key">12dp</dimen>
+    <dimen name="kk_back_touch">96dp</dimen>
+    <dimen name="kk_back_icon">40dp</dimen>
+    <dimen name="kk_key_icon">44dp</dimen>
+    <dimen name="kk_join_left_l">680dp</dimen>
+    <dimen name="kk_join_pad_l">444dp</dimen>
+    <dimen name="kk_join_col_gap_l">120dp</dimen>
+    <dimen name="kk_gap_btn_l">20dp</dimen>
+    <dimen name="kk_error_icon">36dp</dimen>
+    <dimen name="kk_pad_join_bottom">48dp</dimen>
+    <!-- V2-S7: CAR-01 시작 화면(Figma 확정본) -->
+    <dimen name="kk_start_icon_box">144dp</dimen>
+    <dimen name="kk_start_logo">104dp</dimen>
+    <dimen name="kk_start_badge">48dp</dimen>
+    <dimen name="kk_start_badge_icon">28dp</dimen>
+    <dimen name="kk_start_card_h">210dp</dimen>
+    <dimen name="kk_start_card_sq">520dp</dimen>
+    <dimen name="kk_start_loader">72dp</dimen>
+    <dimen name="kk_r_icon">24dp</dimen>
+    <dimen name="kk_r_banner">24dp</dimen>
+    <dimen name="kk_stroke_icon">3dp</dimen>
+    <dimen name="kk_stroke_card">2dp</dimen>
+    <dimen name="kk_alert_icon">40dp</dimen>
+    <dimen name="kk_pad_card_l">48dp</dimen>
+    <dimen name="kk_pad_card_p">32dp</dimen>
+    <dimen name="kk_gap_card_l">40dp</dimen>
+    <dimen name="kk_gap_text">8dp</dimen>
+    <dimen name="kk_rail_side">12dp</dimen>
+    <dimen name="kk_rail_logo_box">80dp</dimen>
+    <dimen name="kk_rail_logo_side">8dp</dimen>
+    <dimen name="kk_tab_w">96dp</dimen>
+    <dimen name="kk_tab_h">104dp</dimen>
+    <dimen name="kk_tab_icon">48dp</dimen>
+    <!-- 탑승자 아바타·연필·차량 칸(Figma 확정본 CAR-02 · 일행 출발 후) -->
+    <dimen name="kk_pencil_icon">32dp</dimen>
+    <dimen name="kk_pencil_row">56dp</dimen>
+    <dimen name="kk_avatar_host">48dp</dimen>
+    <dimen name="kk_avatar_row">72dp</dimen>
+    <dimen name="kk_avatar_overlap">18dp</dimen>
+    <dimen name="kk_chip_pad_h">14dp</dimen>
+    <dimen name="kk_chip_h">46dp</dimen>
+    <dimen name="kk_cell_toy">240dp</dimen>
+    <dimen name="kk_cell_balloon">110dp</dimen>
+    <dimen name="kk_road_h">56dp</dimen>
+    <dimen name="kk_my_toy">280dp</dimen>
+    <dimen name="kk_my_balloon">120dp</dimen>
+    <dimen name="kk_card_toy">180dp</dimen>
+    <dimen name="kk_card_balloon">90dp</dimen>
+    <dimen name="kk_fab_elevation">8dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 시스템 주간/야간을 따른다(PR-08). 색은 colors.xml / values-night/colors.xml -->
+    <style name="Theme.Kkiri" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/kk_bg</item>
+        <item name="colorPrimary">@color/kk_btn</item>
+        <item name="colorAccent">@color/kk_btn</item>
+        <item name="android:textColorPrimary">@color/kk_fg</item>
+        <item name="android:statusBarColor">@color/kk_bg</item>
+        <item name="android:navigationBarColor">@color/kk_bg</item>
+        <item name="android:windowLightStatusBar">@bool/kk_light_bars</item>
+    </style>
+</resources>

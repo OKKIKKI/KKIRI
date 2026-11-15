@@ -1,0 +1,500 @@
+/* 디자인 토큰. 기준: 피그마 와이어프레임 v0.1(흑백, 카드형). 색·간격은 여기서만 바꾼다. */
+/* 디자인 토큰. 기준: 차량 앱(V2) 색 토큰 — 낮=라이트, 밤=다크(기기 설정 따라 자동). 색·간격은 여기서만 바꾼다. */
+@font-face {
+  font-family: 'Asta Sans';
+  src: url('/fonts/AstaSans-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --c-bg: #f8f3f0;
+  --c-text: #3b312d;
+  --c-muted: rgba(59, 49, 45, 0.72);
+  --c-card: rgba(59, 49, 45, 0.05);
+  --c-border: rgba(59, 49, 45, 0.28);
+  --c-primary: #7a5cd6;
+  --c-on-primary: #ffffff;
+  --c-brand: #8060be;
+  --c-me: #3b312d;
+  --c-error: #c62828;
+  --radius: 16px;
+  --radius-pill: 999px;
+  --gutter: 24px;
+  --gap: 16px;
+  --font: 'Asta Sans', 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-bg: #1b1719;
+    --c-text: #f2e4d0;
+    --c-muted: rgba(242, 228, 208, 0.72);
+    --c-card: rgba(242, 228, 208, 0.06);
+    --c-border: rgba(242, 228, 208, 0.3);
+    --c-primary: #a07fe6;
+    --c-on-primary: #1b1719;
+    --c-brand: #a07fe6;
+    --c-me: #f2e4d0;
+    --c-error: #ff8a80;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  padding: 16px var(--gutter) 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.brand svg {
+  height: 28px;
+  width: auto;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+.page {
+  max-width: 480px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: var(--gutter) var(--gutter) calc(var(--gutter) + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.page--center {
+  justify-content: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.muted {
+  color: var(--c-muted);
+  font-size: 14px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card {
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card--filled {
+  background: var(--c-card);
+  border-color: transparent;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.banner {
+  border-radius: var(--radius);
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+.notice {
+  font-size: 14px;
+  color: var(--c-text);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  font: inherit;
+  color: inherit;
+  background: var(--c-bg);
+}
+
+.input:focus {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 1px;
+}
+
+.btn {
+  height: 48px;
+  border-radius: var(--radius);
+  border: 1px solid var(--c-primary);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn--primary {
+  width: 100%;
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+}
+
+.btn--secondary {
+  width: 100%;
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.error {
+  color: var(--c-error);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* WEB-02 ⑤ 메시지 */
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list--messages {
+  gap: 10px;
+}
+
+.message {
+  gap: 4px;
+}
+
+.message__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message__text {
+  margin: 0;
+  word-break: break-word;
+}
+
+.badge {
+  border: 1.5px solid var(--c-text);
+  border-radius: var(--radius-pill);
+  padding: 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* 입력줄은 화면 아래에 붙인다 */
+.composer {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: calc(-1 * var(--gutter));
+  margin-right: calc(-1 * var(--gutter));
+  margin-bottom: calc(-1 * (var(--gutter) + env(safe-area-inset-bottom)));
+  padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom));
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.composer__row {
+  display: flex;
+  gap: 8px;
+}
+
+.composer__row .input {
+  flex: 1;
+  min-width: 0;
+}
+
+.btn--toggle,
+.btn--send {
+  flex: none;
+  padding: 0 14px;
+}
+
+.btn--toggle {
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+.btn--toggle.is-on,
+.btn--send {
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+}
+
+/* WEB-02 ② 경유지 줄, [삭제] */
+.row--center {
+  align-items: center;
+}
+
+.row__end {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn--small {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+/* WEB-03 장소 검색 */
+.list--places {
+  gap: 10px;
+}
+
+.place {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius);
+  background: var(--c-bg);
+  color: var(--c-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.place.is-selected {
+  border: 2px solid var(--c-primary);
+  padding: 13px 15px;
+  font-weight: 700;
+}
+
+.segmented {
+  display: flex;
+  border: 1px solid var(--c-primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.segmented__item {
+  flex: 1;
+  height: 44px;
+  border: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.segmented__item.is-on {
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+}
+
+/* 화면 아래 고정 영역(WEB-03 범위 선택 + 추가 버튼) */
+.bottom-bar {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  margin-left: calc(-1 * var(--gutter));
+  margin-right: calc(-1 * var(--gutter));
+  margin-bottom: calc(-1 * (var(--gutter) + env(safe-area-inset-bottom)));
+  padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom));
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 토스트 */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+  max-width: calc(100% - 2 * var(--gutter));
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+/* WEB-07 ④ QR 크게 보기 */
+.qr-card {
+  align-items: stretch;
+}
+
+.qr {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.qr svg {
+  width: min(100%, 280px);
+  height: auto;
+}
+
+.qr-hint {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* WEB-02 ⑦ 하단 탭 (세션 / 음악) */
+:root {
+  --tabbar-h: 56px;
+}
+
+.page--tabs {
+  padding-bottom: calc(var(--tabbar-h) + var(--gutter) + env(safe-area-inset-bottom));
+}
+
+/* 탭이 있는 화면에서는 메시지 입력줄을 탭 바로 위에 붙인다 */
+.page--tabs .composer {
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  margin-bottom: calc(-1 * var(--gutter));
+}
+
+.tabbar {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  background: var(--c-bg);
+  border-top: 1px solid var(--c-border);
+  z-index: 5;
+}
+
+.tabbar__item {
+  flex: 1;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--c-muted);
+  cursor: pointer;
+}
+
+.tabbar__item.is-on {
+  color: var(--c-text);
+  font-weight: 700;
+}
+
+.page--tabs .toast {
+  bottom: calc(var(--tabbar-h) + 72px);
+}
+
+/* WEB-05 음악 탭 */
+.now-playing__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.controls .btn {
+  flex: 1;
+  width: auto;
+  padding: 0 8px;
+}
+
+.track {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.track__info {
+  min-width: 0;
+}
+
+/* WEB-06 Spotify 연결 */
+.status-line {
+  margin: 0;
+  font-weight: 700;
+}

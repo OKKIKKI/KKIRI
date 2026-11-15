@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- KKIRI 색 토큰: 라이트(주간). 출처: 로고·컬러 확정안(2026-11-14), 프로토타입 v4의 light 테마.
+     화면 코드는 색을 직접 적지 않고 이 이름만 쓴다(PR-22). 야간 값은 values-night/colors.xml. -->
+<resources>
+    <color name="kk_bg">#F8F3F0</color>
+    <color name="kk_fg">#3B312D</color>
+    <!-- 보조 글자: fg 72% -->
+    <color name="kk_fg_muted">#B83B312D</color>
+    <color name="kk_card">#0D3B312D</color>
+    <color name="kk_line">#887C78</color>
+    <color name="kk_chip">#123B312D</color>
+    <!-- 보라 = 일행 / 브랜드 -->
+    <!-- V2-S3: 앰비언트 알림 색(브랜드 보라, 알파 FF 고정) -->
+    <color name="kk_ambient">#FFA07FE6</color>
+    <color name="kk_brand">#8060BE</color>
+    <color name="kk_brand_text">#6B4FC4</color>
+    <color name="kk_brand_tint">#1F7A5CD6</color>
+    <!-- 주요 버튼 -->
+    <color name="kk_btn">#7A5CD6</color>
+    <color name="kk_btn_ink">#FFFFFF</color>
+    <!-- 무채색 = 나 -->
+    <color name="kk_me">#3B312D</color>
+    <color name="kk_ground">#EAE0D8</color>
+
+    <!-- 테마와 무관한 고정 색 -->
+    <!-- QR 카드: 어두운 테마에서도 흰 바탕 유지(D-25) -->
+    <color name="kk_qr_bg">#FFFFFF</color>
+    <!-- 앱 아이콘(다크 버전 확정) -->
+    <color name="kk_icon_bg">#1B1719</color>
+    <color name="kk_icon_brand">#A07FE6</color>
+    <color name="kk_icon_me">#F2E4D0</color>
+    <color name="kk_rail">#EFE7E2</color>
+    <color name="kk_me_ink">#FFFFFF</color>
+    <color name="kk_map_bg">#EEE7E1</color>
+    <color name="kk_online">#2E9E5B</color>
+    <color name="kk_road">#6F6560</color>
+    <color name="kk_speaking">#1F7A45</color>
+    <color name="kk_qr_fg">#000000</color>
+    <color name="kk_toy_cream">#F2E4D0</color>
+    <color name="kk_toy_ink">#1B1719</color>
+    <color name="kk_toy_accent">#A07FE6</color>
+    <color name="kk_avatar_1">#6A58B0</color>
+    <color name="kk_avatar_2">#A64D6C</color>
+    <color name="kk_avatar_3">#3F6E8C</color>
+    <color name="kk_avatar_4">#86653D</color>
+    <color name="kk_avatar_5">#8A4C8A</color>
+    <color name="kk_avatar_6">#5A6578</color>
+    <color name="kk_avatar_ink">#FFFFFF</color>
+    <!-- 지도 초안 08: 다른 경로(빨강) -->
+    <color name="kk_route_other">#E8453C</color>
+</resources>

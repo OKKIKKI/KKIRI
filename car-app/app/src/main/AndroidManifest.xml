@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- D-26: Pleos TextToSpeech SDK 권한 (PM 승인 2026-11-12, Q-CAR-A-002) -->
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+    <!-- V2: Vehicle SDK 2.3.2 권한(모두 normal 등급). 핸들 각도·기어=CAR_DRIVE, 엠비언트=CAR_LIGHTS(읽기)+CONTROL_CAR_LIGHTS(쓰기) -->
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <uses-permission android:name="pleos.car.permission.CAR_LIGHTS" />
+    <uses-permission android:name="pleos.car.permission.CONTROL_CAR_LIGHTS" />
+    <!-- 시연(2026-11-15): Pleos NaviHelper 3.0.5 경유지·경로 요청 권한(SDK 안에 있는 권한 이름 기준) -->
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE" />
+    <uses-permission android:name="pleos.car.permission.NAVI_ROUTE_SEARCH" />
+    <uses-permission android:name="pleos.car.permission.NAVI_CUSTOM_ROUTE" />
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Kkiri">
+        <activity
+            android:name=".ui.MainActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:exported="true">
+            <!-- 주행 중 사용(Distraction Optimized) 선언. AAOS 표준 방식(Pleos 문서에는 선언 코드가 없음,
+                 docs/pleos/PLEOS_SDK_NOTES.md 5절). 주행 중에는 터치 요소가 없는 CAR-04만 보인다(COM-01). -->
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

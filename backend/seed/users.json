@@ -1,0 +1,7 @@
+[
+  {
+    "userId": "usr_01",
+    "name": "드라이버A",
+    "deviceIds": ["dev-0001", "demo-car-a"]
+  }
+]

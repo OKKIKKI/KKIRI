@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 화면을 다시 그려도 MainActivity가 공간 그림을 찾을 수 있게 하는 ID -->
+    <item name="kk_space" type="id" />
+</resources>

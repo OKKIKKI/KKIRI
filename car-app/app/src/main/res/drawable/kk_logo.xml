@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 끼리 심볼: 'ㄲ' = 나란히 달리는 두 대의 차. 뒤차 = 일행(보라), 앞차 = 나(무채색, 테마에 따라 바뀜).
+     출처: kkiri-symbol-*.svg (viewBox 12 50 126 56) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="81dp"
+    android:height="36dp"
+    android:viewportWidth="126"
+    android:viewportHeight="56">
+    <group android:translateX="6" android:translateY="6">
+        <path
+            android:pathData="M0,0 H28 L40,14 H54 V30"
+            android:strokeColor="@color/kk_brand"
+            android:strokeWidth="9"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M3,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 M37,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0"
+            android:fillColor="@color/kk_brand" />
+    </group>
+    <group android:translateX="66" android:translateY="6">
+        <path
+            android:pathData="M0,0 H28 L40,14 H54 V30"
+            android:strokeColor="@color/kk_me"
+            android:strokeWidth="9"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M3,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 M37,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0"
+            android:fillColor="@color/kk_me" />
+    </group>
+</vector>

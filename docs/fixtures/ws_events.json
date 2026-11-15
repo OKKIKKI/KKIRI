@@ -1,0 +1,444 @@
+[
+  {
+    "type": "session.snapshot",
+    "sessionId": "ses_01",
+    "seq": 1,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "session": {
+        "sessionId": "ses_01",
+        "name": "강릉 여행",
+        "state": "ACTIVE",
+        "isAccountSession": true,
+        "hostCarId": "car_A",
+        "destination": {
+          "placeId": "plc_05",
+          "name": "경포대",
+          "address": "강원 강릉시 경포로 365",
+          "lat": 37.7955,
+          "lng": 128.8966,
+          "distanceKm": 6.8
+        },
+        "joinCode": "482913",
+        "qr": {
+          "url": "http://localhost:5173/j/abc123",
+          "expiresAt": "2026-11-13T05:50:00Z"
+        },
+        "cars": [
+          {
+            "carId": "car_A",
+            "displayName": "A차",
+            "driverName": "드라이버A",
+            "role": "HOST",
+            "status": "CONNECTED",
+            "driveState": "PARKED",
+            "look": null
+          },
+          {
+            "carId": "car_B",
+            "displayName": "B차",
+            "driverName": "현우",
+            "role": "COHOST",
+            "status": "CONNECTED",
+            "driveState": "PARKED",
+            "look": null
+          }
+        ],
+        "participants": [
+          {
+            "participantId": "par_00",
+            "name": "드라이버A",
+            "role": "LEADER",
+            "carId": "car_A",
+            "isMember": true,
+            "online": true
+          },
+          {
+            "participantId": "par_01",
+            "name": "민지",
+            "role": "CREW",
+            "carId": "car_A",
+            "isMember": false,
+            "online": true
+          }
+        ],
+        "waypoints": [
+          {
+            "waypointId": "wpt_01",
+            "carId": "car_A",
+            "place": {
+              "placeId": "plc_01",
+              "name": "카페 오롯",
+              "address": "강원 강릉시 창해로 14",
+              "lat": 37.773,
+              "lng": 128.947,
+              "distanceKm": 1.2
+            },
+            "addedBy": {
+              "participantId": "par_01",
+              "name": "민지"
+            },
+            "createdAt": "2026-11-13T05:20:00Z"
+          }
+        ],
+        "proposals": [
+          {
+            "proposalId": "prp_01",
+            "place": {
+              "placeId": "plc_02",
+              "name": "강릉휴게소(강릉 방향)",
+              "address": "강원 강릉시 성산면 영동고속도로",
+              "lat": 37.726,
+              "lng": 128.789,
+              "distanceKm": 18.4
+            },
+            "fromCarId": "car_A",
+            "proposedBy": {
+              "participantId": "par_01",
+              "name": "민지"
+            },
+            "responses": [
+              {
+                "carId": "car_B",
+                "status": "PENDING"
+              }
+            ],
+            "expiresAt": "2026-11-13T05:21:00Z"
+          }
+        ],
+        "mutes": [
+          {
+            "byCarId": "car_A",
+            "targetCarId": "car_B"
+          }
+        ],
+        "music": {
+          "connected": true,
+          "locked": false,
+          "nowPlaying": {
+            "title": "밤편지",
+            "artist": "아이유",
+            "albumImageUrl": null,
+            "isPlaying": true
+          }
+        },
+        "createdAt": "2026-11-13T05:00:00Z",
+        "pausedAt": null,
+        "expiresAt": null
+      },
+      "you": {
+        "actorType": "PARTICIPANT",
+        "carId": "car_A",
+        "participantId": "par_01",
+        "role": "CREW"
+      }
+    }
+  },
+  {
+    "type": "participant.joined",
+    "sessionId": "ses_01",
+    "seq": 2,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "participant": {
+        "participantId": "par_01",
+        "name": "민지",
+        "role": "CREW",
+        "carId": "car_A",
+        "isMember": false,
+        "online": true
+      }
+    }
+  },
+  {
+    "type": "car.joined",
+    "sessionId": "ses_01",
+    "seq": 3,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "car": {
+        "carId": "car_B",
+        "displayName": "B차",
+        "driverName": "현우",
+        "role": "COHOST",
+        "status": "CONNECTED",
+        "driveState": "PARKED",
+        "look": null
+      }
+    }
+  },
+  {
+    "type": "car.status_changed",
+    "sessionId": "ses_01",
+    "seq": 4,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "carId": "car_A",
+      "status": "CONNECTED",
+      "driveState": "DRIVING"
+    }
+  },
+  {
+    "type": "car.look_changed",
+    "sessionId": "ses_01",
+    "seq": 4,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "carId": "car_A",
+      "look": {
+        "steerStep": -1,
+        "color": "#F6C343",
+        "hat": true,
+        "balloon": false,
+        "character": "bear",
+        "items": ["crown", "ribbon"]
+      }
+    }
+  },
+  {
+    "type": "message.created",
+    "sessionId": "ses_01",
+    "seq": 5,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "message": {
+        "messageId": "msg_01",
+        "kind": "TEXT",
+        "sender": {
+          "type": "PARTICIPANT",
+          "id": "par_01",
+          "name": "민지",
+          "carId": "car_A"
+        },
+        "target": "ALL",
+        "text": "기름 넣고 갈게",
+        "clip": null,
+        "urgent": false,
+        "createdAt": "2026-11-13T05:20:00Z"
+      },
+      "delivery": {
+        "mode": "SPEAK"
+      }
+    }
+  },
+  {
+    "type": "message.created",
+    "sessionId": "ses_01",
+    "seq": 6,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "message": {
+        "messageId": "msg_02",
+        "kind": "VOICE",
+        "sender": {
+          "type": "CAR",
+          "id": "car_B",
+          "name": "현우",
+          "carId": "car_B"
+        },
+        "target": "car_A",
+        "text": null,
+        "clip": {
+          "url": "/v1/sessions/ses_01/voice-clips/msg_02",
+          "durationMs": 4200,
+          "mime": "audio/mp4"
+        },
+        "urgent": false,
+        "createdAt": "2026-11-13T05:20:00Z"
+      },
+      "delivery": {
+        "mode": "HOLD"
+      }
+    }
+  },
+  {
+    "type": "message.created",
+    "sessionId": "ses_01",
+    "seq": 7,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "message": {
+        "messageId": "msg_03",
+        "kind": "BROADCAST",
+        "sender": {
+          "type": "CAR",
+          "id": "car_A",
+          "name": "드라이버A",
+          "carId": "car_A"
+        },
+        "target": "ALL",
+        "text": "다음 휴게소에서 쉬자",
+        "clip": null,
+        "urgent": false,
+        "createdAt": "2026-11-13T05:20:00Z"
+      },
+      "delivery": {
+        "mode": "DISPLAY"
+      }
+    }
+  },
+  {
+    "type": "mute.changed",
+    "sessionId": "ses_01",
+    "seq": 8,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "mutes": [
+        {
+          "byCarId": "car_A",
+          "targetCarId": "car_B"
+        }
+      ]
+    }
+  },
+  {
+    "type": "waypoint.added",
+    "sessionId": "ses_01",
+    "seq": 9,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "waypoint": {
+        "waypointId": "wpt_01",
+        "carId": "car_A",
+        "place": {
+          "placeId": "plc_01",
+          "name": "카페 오롯",
+          "address": "강원 강릉시 창해로 14",
+          "lat": 37.773,
+          "lng": 128.947,
+          "distanceKm": 1.2
+        },
+        "addedBy": {
+          "participantId": "par_01",
+          "name": "민지"
+        },
+        "createdAt": "2026-11-13T05:20:00Z"
+      },
+      "byUndo": false
+    }
+  },
+  {
+    "type": "waypoint.proposed",
+    "sessionId": "ses_01",
+    "seq": 10,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "proposal": {
+        "proposalId": "prp_01",
+        "place": {
+          "placeId": "plc_02",
+          "name": "강릉휴게소(강릉 방향)",
+          "address": "강원 강릉시 성산면 영동고속도로",
+          "lat": 37.726,
+          "lng": 128.789,
+          "distanceKm": 18.4
+        },
+        "fromCarId": "car_A",
+        "proposedBy": {
+          "participantId": "par_01",
+          "name": "민지"
+        },
+        "responses": [
+          {
+            "carId": "car_B",
+            "status": "PENDING"
+          }
+        ],
+        "expiresAt": "2026-11-13T05:21:00Z"
+      }
+    }
+  },
+  {
+    "type": "waypoint.proposal_resolved",
+    "sessionId": "ses_01",
+    "seq": 11,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "proposalId": "prp_01",
+      "carId": "car_B",
+      "status": "ACCEPTED"
+    }
+  },
+  {
+    "type": "waypoint.removed",
+    "sessionId": "ses_01",
+    "seq": 12,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "waypointId": "wpt_01",
+      "carId": "car_A",
+      "byUndo": true
+    }
+  },
+  {
+    "type": "music.now_playing",
+    "sessionId": "ses_01",
+    "seq": 13,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "music": {
+        "connected": true,
+        "locked": false,
+        "nowPlaying": {
+          "title": "밤편지",
+          "artist": "아이유",
+          "albumImageUrl": null,
+          "isPlaying": true
+        }
+      }
+    }
+  },
+  {
+    "type": "music.queue_added",
+    "sessionId": "ses_01",
+    "seq": 14,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "addedBy": {
+        "name": "지호"
+      }
+    }
+  },
+  {
+    "type": "music.lock_changed",
+    "sessionId": "ses_01",
+    "seq": 15,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "locked": true
+    }
+  },
+  {
+    "type": "session.state_changed",
+    "sessionId": "ses_01",
+    "seq": 16,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "state": "PAUSED",
+      "pausedAt": "2026-11-13T05:20:00Z",
+      "expiresAt": "2026-11-14T05:20:00Z"
+    }
+  },
+  {
+    "type": "session.ended",
+    "sessionId": "ses_01",
+    "seq": 17,
+    "ts": "2026-11-13T05:20:00Z",
+    "payload": {
+      "reason": "HOST_ENDED",
+      "summary": {
+        "places": [
+          "카페 오롯",
+          "강릉휴게소(강릉 방향)"
+        ],
+        "cars": [
+          "A차",
+          "B차"
+        ],
+        "trackCount": 7
+      }
+    }
+  }
+]

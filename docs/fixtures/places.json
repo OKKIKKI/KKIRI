@@ -1,0 +1,66 @@
+[
+  {
+    "placeId": "plc_01",
+    "name": "카페 오롯",
+    "address": "강원 강릉시 창해로 14",
+    "lat": 37.773,
+    "lng": 128.947,
+    "distanceKm": 1.2
+  },
+  {
+    "placeId": "plc_02",
+    "name": "강릉휴게소(강릉 방향)",
+    "address": "강원 강릉시 성산면 영동고속도로",
+    "lat": 37.726,
+    "lng": 128.789,
+    "distanceKm": 18.4
+  },
+  {
+    "placeId": "plc_03",
+    "name": "횡성휴게소(강릉 방향)",
+    "address": "강원 횡성군 안흥면 영동고속도로",
+    "lat": 37.469,
+    "lng": 128.162,
+    "distanceKm": 92.0
+  },
+  {
+    "placeId": "plc_04",
+    "name": "안목해변",
+    "address": "강원 강릉시 창해로14번길",
+    "lat": 37.7716,
+    "lng": 128.948,
+    "distanceKm": 1.5
+  },
+  {
+    "placeId": "plc_05",
+    "name": "경포대",
+    "address": "강원 강릉시 경포로 365",
+    "lat": 37.7955,
+    "lng": 128.8966,
+    "distanceKm": 6.8
+  },
+  {
+    "placeId": "plc_06",
+    "name": "초당순두부마을",
+    "address": "강원 강릉시 초당동",
+    "lat": 37.7905,
+    "lng": 128.914,
+    "distanceKm": 5.1
+  },
+  {
+    "placeId": "plc_07",
+    "name": "주문진수산시장",
+    "address": "강원 강릉시 주문진읍 시장길 38",
+    "lat": 37.892,
+    "lng": 128.829,
+    "distanceKm": 21.3
+  },
+  {
+    "placeId": "plc_08",
+    "name": "강릉역",
+    "address": "강원 강릉시 용지로 176",
+    "lat": 37.764,
+    "lng": 128.899,
+    "distanceKm": 4.0
+  }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 레일 탭 아이콘(48dp). 모양은 design/resources/kkiri/prototype_v4.html의 IC. 색은 코드에서 입힌다(Rail.kt) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp" android:viewportWidth="20" android:viewportHeight="20">
+    <group android:translateX="10" android:translateY="10">
+        <path android:pathData="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" android:fillColor="#FFFFFF" />
+    </group>
+</vector>

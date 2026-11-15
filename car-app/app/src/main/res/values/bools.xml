@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 상태 표시줄 아이콘을 어둡게 그릴지(밝은 배경일 때 true) -->
+    <bool name="kk_light_bars">true</bool>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KKIRI</string>
+
+    <!-- 화면 이름 (docs/03_SCREENS.md 제목). 1-2 단계 빈 화면에서만 쓰는 임시 표시 -->
+    <string name="screen_car_01_title">시작</string>
+    <string name="screen_car_02_title">세션 대기</string>
+    <string name="screen_car_03_title">차량 합류</string>
+    <string name="screen_car_04_title">주행 중</string>
+    <string name="screen_car_05_title">정차 중</string>
+
+    <!-- HB-S-CAR-01 시작 -->
+    <!-- ① 목적지: %1$s = 지금 내비 목적지 이름 -->
+    <string name="car01_destination">목적지 : %1$s</string>
+    <string name="car01_destination_none">목적지 없음</string>
+    <string name="car01_create_session">세션 만들기</string>
+    <string name="car01_join_card">다른 차와 같이 가나요? 접속코드로 합류하기</string>
+    <!-- ② 세션 이름 기본값: %1$s = 운전자 이름 -->
+    <string name="car01_session_name_default">%1$s의 드라이브</string>
+    <string name="car01_error_create">세션을 만들지 못했어요. 다시 시도해 주세요</string>
+
+    <!-- HB-S-CAR-02 세션 대기 -->
+    <string name="car02_empty_participants">QR을 찍어 함께하세요</string>
+    <string name="car02_depart">출발</string>
+    <string name="car02_qr_expired">QR이 만료됐어요</string>
+    <!-- ③ 참가자 역할 표시 (03_SCREENS CAR-02 ③) -->
+    <string name="role_host_driver">호스트·운전자</string>
+    <string name="role_leader">리더</string>
+    <string name="role_crew">크루</string>
+
+    <!-- HB-S-CAR-03 차량 합류 -->
+    <string name="car03_join_with_destination">목적지로 설정하고 합류</string>
+    <string name="car03_join_keep_destination">목적지는 그대로 두고 합류</string>
+    <string name="car03_cancel">취소</string>
+    <!-- 오류: JOIN_CODE_INVALID(·SESSION_NOT_FOUND), SESSION_ENDED. 그 밖은 WEB과 같은 문구 -->
+    <string name="car03_error_not_found">세션을 찾을 수 없어요</string>
+    <string name="car03_error_ended">이미 끝난 세션이에요</string>
+    <string name="error_retry_later">잠시 후 다시 시도해 주세요</string>
+
+    <!-- HB-S-CAR-04 주행 중 -->
+    <string name="car04_lock_band">주행 중에는 음성으로만 조작할 수 있어요</string>
+    <!-- ② 발화 차량: %1$s = 차 이름, %2$s = 이름 -->
+    <string name="car04_speaker">%1$s · %2$s</string>
+    <string name="car04_speaking">말하는 중</string>
+    <!-- ③ 음소거 상태: %1$s = 차 이름, %2$d = 보관 건수 -->
+    <string name="car04_mute_by_me">음소거 : %1$s (메시지 %2$d건 보관)</string>
+    <string name="car04_muted_me">%1$s가 내 차를 음소거함</string>
+    <!-- ④ 음악 잠금 (Spotify 연결 시에만) -->
+    <string name="car04_music_lock_on">음악 잠금 : 켜짐</string>
+    <string name="car04_music_lock_off">음악 잠금 : 꺼짐 (뒷자리 허용)</string>
+    <!-- ⑤⑥⑦ 음성 안내 카드 -->
+    <string name="car04_hint_message">\"B차에 ~ 전해줘\"</string>
+    <string name="car04_hint_mute">\"B차 음소거\" · \"음소거 풀어\"</string>
+    <string name="car04_hint_proposal">제안에는 \"좋아\" · \"취소\"</string>
+
+    <!-- HB-S-CAR-05 정차 중 -->
+    <string name="car05_show_qr">QR 다시 보기</string>
+    <string name="car05_end_session">세션 종료</string>
+    <!-- ① 일행 차량 상태 (03_SCREENS CAR-05 ①, CAR-02 ④) -->
+    <string name="car_status_connected">연결됨</string>
+    <string name="car_status_paused">일시정지</string>
+    <string name="car_status_disconnected">끊김</string>
+    <!-- ① 일행 차량 음소거 토글 (R-22) -->
+    <string name="car05_mute">음소거</string>
+    <string name="car05_muted">음소거 중</string>
+    <!-- ② 보관 메시지: %1$s = 보낸 사람, %2$s = 본문 또는 "음성 메시지" -->
+    <string name="car05_held_title">보관 메시지</string>
+    <string name="car05_held_line">%1$s · %2$s</string>
+    <string name="car05_held_voice">음성 메시지</string>
+    <!-- ③ 경유지 변경 내역: %1$s = 장소 이름, %2$s = 추가한 사람 -->
+    <string name="car05_waypoints_title">경유지 변경 내역</string>
+    <string name="car05_waypoint_line">%1$s · %2$s</string>
+    <!-- ⑤ 지금 재생 -->
+    <string name="car05_now_playing">지금 재생 : %1$s - %2$s</string>
+    <string name="car05_end_confirm_message">세션을 종료할까요? 모든 참가자의 연결이 끊기고 메시지·경유지가 지워져요.</string>
+    <string name="car05_end_confirm_end">종료</string>
+    <string name="car05_end_confirm_cancel">취소</string>
+    <string name="car05_error_end">세션을 종료하지 못했어요. 다시 시도해 주세요</string>
+
+    <!-- V2-S6 레일 탭 이름(접근성 라벨) -->
+    <string name="tab_space">공간</string>
+    <string name="tab_group">일행</string>
+    <string name="tab_messages">메시지</string>
+    <string name="sample_notice">샘플 화면이에요</string>
+    <string name="msg_to_label">받는 차</string>
+    <string name="msg_to_all">전체</string>
+    <string name="msg_send_voice">음성으로 보내기</string>
+    <string name="msg_sample_b1">휴게소 들를까요?</string>
+    <string name="msg_sample_a1">좋아요, 다음 휴게소요</string>
+    <string name="msg_sample_c1">곧 도착해요!</string>
+    <string name="msg_sample_time">방금</string>
+    <string name="tab_map">지도</string>
+    <string name="tab_deco">꾸미기</string>
+    <string name="tab_settings">설정</string>
+    <string name="tab_help">도움말</string>
+
+    <!-- V2-S7 일행 탭(Figma 확정본). docs/03_SCREENS.md는 S12에서 함께 고친다 -->
+    <string name="start_header">일행</string>
+    <string name="start_create_title">세션 만들기</string>
+    <string name="start_create_desc">%1$s\n누르면 바로 시작해요</string>
+    <string name="start_create_loading">세션을 만드는 중이에요</string>
+    <string name="start_join_title">세션 참여</string>
+    <string name="start_join_desc">일행에게 받은\n6자리 코드를 입력해요</string>
+    <string name="start_join_icon">123</string>
+    <string name="join_title">접속코드 입력</string>
+    <string name="join_desc">호스트 화면의 6자리 숫자를 입력해 주세요</string>
+    <string name="join_keep">내 경로 유지</string>
+    <string name="join_follow">일행 따라가기</string>
+    <string name="join_backspace">지우기</string>
+    <string name="wait_title">세션 대기</string>
+    <string name="wait_code_label">접속코드</string>
+    <string name="wait_end">세션 종료</string>
+    <!-- %1$s = 호스트 운전자 이름, %2$d = 연결된 차, %3$d = 전체 차 -->
+    <string name="wait_summary">호스트 · %1$s · %2$d/%3$d대 준비</string>
+    <string name="wait_summary_pending"> · %1$s 연결 대기</string>
+    <string name="group_host_only">호스트 · %1$s</string>
+    <string name="group_me">나 · %1$s</string>
+    <string name="group_muted_suffix"> · 음소거 중</string>
+    <string name="group_invite">QR 다시 보기</string>
+    <string name="group_label_me">내 차</string>
+    <string name="group_deco">꾸미기</string>
+    <string name="group_riders"> · %1$d명</string>
+    <string name="wait_cars">차량 목록</string>
+    <string name="wait_ready_l">%2$d대 중 %1$d대 준비 완료</string>
+    <string name="wait_host_tag">호스트</string>
+    <string name="car_me_name">%1$s · %2$s</string>
+    <string name="edit_pencil">이름 편집</string>
+    <string name="coming_soon">아직 준비 중인 기능이에요</string>
+    <string name="coming_soon_ok">확인</string>
+    <string name="coming_soon_sub">다음 버전에서 만들 예정이에요</string>
+    <!-- V2-S8 공간 탭(광장) -->
+    <string name="space_status_parked">정차 중 · %1$d/%2$d대 연결</string>
+    <string name="space_status_driving">주행 중 · 일행 함께 이동</string>
+    <string name="space_chip_me">%1$s · 나</string>
+    <string name="space_speaking">말하는 중</string>
+    <string name="space_more">+%1$d</string>
+    <string name="space_mute_title">%1$s · %2$s 음소거 중</string>
+    <string name="space_held">보관 메시지 %1$d건</string>
+    <string name="space_unmute">음소거 풀기</string>
+    <string name="space_tip_title">주행 중에는 말로 조작해요</string>
+    <string name="space_tip_body">\"B차에 ~ 전해줘\"처럼 말해 보세요</string>
+    <!-- V2-S9 로딩 애니메이션 -->
+    <string name="splash_name">끼리</string>
+    <string name="splash_driving">주행 중에는 바로 시작해요</string>
+    <!-- V2-S10 꾸미기 -->
+    <string name="deco_hat">모자</string>
+    <string name="deco_balloon">풍선</string>
+    <string name="deco_tab_car">자동차</string>
+    <string name="deco_tab_char">캐릭터</string>
+    <string name="deco_tab_prop">소품</string>
+    <string name="deco_tab_plaza">광장</string>
+    <string name="deco_plaza_note">광장 배경은 내 화면에만 적용돼요</string>
+    <string name="deco_prop_note">소품은 최대 4개까지, 머리 위 소품은 하나만 골라요</string>
+    <string name="deco_save">저장</string>
+    <string name="deco_saved">저장했어요</string>
+    <!-- V2-S11 -->
+    <string name="messages_empty">보관한 메시지가 없어요</string>
+    <string name="map_mock_label">예시 화면이에요</string>
+    <string name="map_legend_group">일행 경로</string>
+    <string name="map_legend_other">다른 경로</string>
+    <string name="map_dest">목적지</string>
+    <string name="map_summary">경유지 %1$d곳 · %2$s</string>
+    <string name="map_no_dest">목적지 없음</string>
+    <string name="map_edit">경유지 편집</string>
+</resources>

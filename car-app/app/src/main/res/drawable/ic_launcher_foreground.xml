@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 앱 아이콘 전경(적응형 아이콘, PR-21). 108dp 캔버스의 가운데 안전 영역(66dp) 안에 심볼을 둔다.
+     원본 150 캔버스(kkiri-icon-dark.svg)를 0.46배로 줄여 가운데에 놓았다. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.46"
+        android:scaleY="0.46"
+        android:translateX="19.5"
+        android:translateY="18.1">
+        <group android:translateX="18" android:translateY="56">
+            <path
+                android:pathData="M0,0 H28 L40,14 H54 V30"
+                android:strokeColor="@color/kk_icon_brand"
+                android:strokeWidth="9"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+            <path
+                android:pathData="M3,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 M37,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0"
+                android:fillColor="@color/kk_icon_brand" />
+        </group>
+        <group android:translateX="78" android:translateY="56">
+            <path
+                android:pathData="M0,0 H28 L40,14 H54 V30"
+                android:strokeColor="@color/kk_icon_me"
+                android:strokeWidth="9"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round" />
+            <path
+                android:pathData="M3,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0 M37,42 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0"
+                android:fillColor="@color/kk_icon_me" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 본문 열의 최대 너비(dp). 넓은 창에서는 좌우 여백을 늘려 이 너비를 넘지 않게 한다 -->
+    <integer name="kk_content_max_dp">720</integer>
+    <!-- 핸들 각도 연동(명세 6.1): 이 각도(도)마다 캐릭터가 1단계 기운다. 에뮬레이터는 50도 이상 차이부터 값이 바뀐다 -->
+    <integer name="kk_steer_step_deg">150</integer>
+    <!-- 좌우 최대 단계 수 -->
+    <integer name="kk_steer_max_steps">2</integer>
+    <!-- 1단계마다 기우는 각도(도) -->
+    <integer name="kk_steer_tilt_per_step_deg">6</integer>
+    <!-- 첫 주행 안내 말풍선을 보여 주는 시간(ms) -->
+    <integer name="kk_first_drive_tip_ms">3000</integer>
+    <!-- 앱을 열 때 로딩 애니메이션 길이(ms). 주행 중에는 짧게 -->
+    <integer name="kk_splash_ms">2400</integer>
+    <integer name="kk_splash_driving_ms">900</integer>
+    <!-- 내 차 모양(핸들 단계·꾸밈)을 서버로 보내는 최소 간격(ms, 명세 6.3 LOOK_MIN_INTERVAL_MS) -->
+    <integer name="kk_look_min_interval_ms">300</integer>
+</resources>
